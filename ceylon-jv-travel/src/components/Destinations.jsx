@@ -119,7 +119,7 @@ export default function Destinations() {
         /* Modal styling */
         .dest-modal {
           background: #fff; width: 620px; max-width: 92vw; border-radius: var(--radius-lg);
-          overflow: hidden; position: relative; box-shadow: var(--shadow-lg); animation: fadeUp 0.3s ease;
+          overflow: hidden; position: relative; box-shadow: var(--shadow-lg); animation: slideUpModal 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
         .dest-modal__close {
           position: absolute; top: 16px; right: 16px; z-index: 10;

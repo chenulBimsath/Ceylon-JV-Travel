@@ -176,17 +176,32 @@ button { font-family: inherit; cursor: pointer; }
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
 }
 
+@keyframes slideUpModal {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(0.95);
+    filter: blur(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
 /* Modal Overlay Base */
 .modal-overlay {
   position: fixed;
   inset: 0;
   background: rgba(15, 18, 13, 0.82);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  animation: fadeUp 0.3s var(--ease-out);
+  animation: fadeUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 

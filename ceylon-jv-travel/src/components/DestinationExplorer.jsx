@@ -54,7 +54,7 @@ export default function DestinationExplorer() {
         .explorer-card__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,23,18,0.05), rgba(20,23,18,0.78)); }
         .explorer-card__name { position: absolute; left: 18px; bottom: 16px; font-family: var(--font-display); font-size: 21px; color: #fff; }
         .explorer-modal { position: fixed; inset: 0; background: rgba(20,23,18,0.72); backdrop-filter: blur(4px); z-index: 80; display: flex; align-items: center; justify-content: center; padding: 24px; animation: fadeUp 0.3s ease; }
-        .explorer-modal__panel { background: #fff; max-width: 520px; width: 100%; border-radius: var(--radius-lg); overflow: hidden; max-height: 88vh; overflow-y: auto; position: relative; box-shadow: var(--shadow-lg); }
+        .explorer-modal__panel { background: #fff; max-width: 520px; width: 100%; border-radius: var(--radius-lg); overflow: hidden; max-height: 88vh; overflow-y: auto; position: relative; box-shadow: var(--shadow-lg); animation: slideUpModal 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
         .explorer-modal__close { position: absolute; top: 14px; right: 14px; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; z-index: 2; }
         .explorer-modal__img { width: 100%; height: 220px; object-fit: cover; }
         .explorer-modal__body { padding: 24px 26px 28px; }

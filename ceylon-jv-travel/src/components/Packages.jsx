@@ -165,7 +165,7 @@ export default function Packages() {
         .pkg-modal {
           background: #fff; width: 880px; max-width: 95vw; max-height: 90vh;
           border-radius: var(--radius-lg); overflow-y: auto; position: relative;
-          box-shadow: var(--shadow-lg); animation: fadeUp 0.3s ease;
+          box-shadow: var(--shadow-lg); animation: slideUpModal 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
         .pkg-modal__close {
           position: absolute; top: 16px; right: 16px; z-index: 10;

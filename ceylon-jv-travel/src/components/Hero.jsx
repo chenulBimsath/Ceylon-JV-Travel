@@ -38,26 +38,26 @@ export default function Hero({ loaded }) {
       <div className="hero__scroll-cue"><span /></div>
 
       <style>{`
-        .hero { position: relative; min-height: 94vh; display: flex; align-items: center; margin-top: -84px; overflow: hidden; }
+        .hero { position: relative; width: 100%; height: 100vh; min-height: 680px; display: flex; align-items: center; margin: 0; padding: 0; overflow: hidden; }
         .hero__bg { position: absolute; inset: 0; background-size: cover; background-position: center; transform: scale(1.14); transition: transform 5s ease-out; }
         .hero__bg--zoom { transform: scale(1); }
-        .hero__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,23,18,0.58) 0%, rgba(20,23,18,0.32) 42%, rgba(20,23,18,0.8) 100%); }
-        .hero__content { position: relative; z-index: 2; max-width: 660px; padding: 0 6%; margin-top: 40px; }
-        .hero__eyebrow { color: var(--gold-300) !important; }
-        .hero__title { font-family: var(--font-display); font-style: italic; font-weight: 600; font-size: clamp(38px, 5.6vw, 64px); line-height: 1.1; color: #FBF9F2; margin: 0 0 22px; }
-        .hero__subtitle { font-size: 18px; line-height: 1.65; color: rgba(251,249,242,0.86); max-width: 480px; margin: 0 0 34px; }
+        .hero__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,23,18,0.65) 0%, rgba(20,23,18,0.35) 45%, rgba(20,23,18,0.85) 100%); }
+        .hero__content { position: relative; z-index: 2; max-width: 680px; padding: 0 6%; margin-top: 40px; }
+        .hero__eyebrow { color: var(--gold-300) !important; font-size: 13px; letter-spacing: 3.5px; }
+        .hero__title { font-family: var(--font-display); font-style: italic; font-weight: 600; font-size: clamp(42px, 6vw, 68px); line-height: 1.08; color: #FBF9F2; margin: 0 0 22px; text-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+        .hero__subtitle { font-size: 18.5px; line-height: 1.65; color: rgba(251,249,242,0.9); max-width: 500px; margin: 0 0 36px; }
         .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
         .hero__floater {
-          position: absolute; right: 6%; bottom: 90px; z-index: 2;
-          display: flex; align-items: center; gap: 12px;
-          background: rgba(255,255,255,0.12); backdrop-filter: blur(16px);
+          position: absolute; right: 6%; bottom: 80px; z-index: 2;
+          display: flex; align-items: center; gap: 14px;
+          background: rgba(20,23,18,0.55); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
           border: 1px solid rgba(255,255,255,0.25); border-radius: var(--radius-md);
-          padding: 14px 18px; animation: floatY 4.5s ease-in-out infinite;
+          padding: 14px 20px; animation: floatY 4.5s ease-in-out infinite; box-shadow: 0 10px 30px rgba(0,0,0,0.25);
         }
-        .hero__floater-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--gold-500); box-shadow: 0 0 0 5px rgba(201,162,75,0.25); flex-shrink: 0; }
-        .hero__floater-title { font-size: 14px; color: #fff; margin: 0; font-family: var(--font-utility); font-weight: 500; }
-        .hero__floater-sub { font-size: 12.5px; color: rgba(255,255,255,0.7); margin: 2px 0 0; }
-        .hero__floater-cta { font-family: var(--font-utility); font-size: 13px; color: var(--ink); background: #fff; padding: 8px 14px; border-radius: 999px; text-decoration: none; flex-shrink: 0; }
+        .hero__floater-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--gold-500); box-shadow: 0 0 0 5px rgba(201,162,75,0.25); flex-shrink: 0; }
+        .hero__floater-title { font-size: 14.5px; color: #fff; margin: 0; font-family: var(--font-utility); font-weight: 500; }
+        .hero__floater-sub { font-size: 12.5px; color: rgba(255,255,255,0.75); margin: 2px 0 0; }
+        .hero__floater-cta { font-family: var(--font-utility); font-size: 13px; color: var(--ink); background: var(--gold-100); padding: 8px 16px; border-radius: 999px; text-decoration: none; flex-shrink: 0; font-weight: 500; }
         .hero__scroll-cue { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 22px; height: 36px; border: 1px solid rgba(251,249,242,0.6); border-radius: 12px; z-index: 2; }
         .hero__scroll-cue span { display: block; width: 4px; height: 4px; border-radius: 50%; background: #FBF9F2; margin: 6px auto 0; animation: cueDrop 1.8s ease-in-out infinite; }
         @keyframes cueDrop { 0% { transform: translateY(0); opacity: 1; } 70% { transform: translateY(14px); opacity: 0; } 100% { transform: translateY(0); opacity: 0; } }
@@ -71,3 +71,4 @@ export default function Hero({ loaded }) {
     </section>
   );
 }
+
